@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="thumbnail">
+            <li><img src="bike.jpg.png"onclick="big('bike.jpg.png');bg('blue')"></li>
+           <li><img src="bike2.jipg.png" onclick="big('bike2.jipg.png');bg('red')"></li>
+            <li><img src="bike3.png"onclick="big('bike3.png');bg('purple')"></li>
+        </div>
+        <div class="big-images">
+            <img src="bike3.png" class="big">
+        </div>
+        <div class="content">
+            <p>Let's ride</p><br>
+            <h1>Don't Fear Dying <br>&nbsp;&nbsp;fear Not Living</h1><br><br>
+            <h2>For bike lovers &Bike Riders</h2>
+        </div>
+    </div>
+    <script>
+        function big(img){
+            document.querySelector('.big').src=img;
+        }
+        function bg(background){
+           const bg= document.querySelector('.container');
+           bg.style.background=background;
+        }
+    </script>
+</body>
+</html>
